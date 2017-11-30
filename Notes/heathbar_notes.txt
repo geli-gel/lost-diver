@@ -1,0 +1,29 @@
+quick overview of object oriented style health bar
+
+BarScript - the script that has the properties:
+        content (image)
+        fillAmount (float used to set )
+        Value (encapsulated property set with a map that sets fillAmount to the right ratio for the barscript image)
+        MaxValue (encapsulated property to store max value of the fill amount)
+
+Stat - not attached to anything, called in the PlayerScript. this is reusable Class for each stat!
+    it is not a monobehavior, it just says public Class Stat at the top of it.
+    from another script, you can say Private Stat oxygen; or Private Stat health; and it creates the
+    stat with the following properties:
+        BarScript as bar (the one described above) which you have to drag the item to (in our case, Level1/Canvas/OxygenBar)
+        MaxVal (encapsulated property to store max value of the stat and update bar's MaxValue)
+        CurrentVal (encapsulated property to store current value of the stat and update bar's Value)
+    and the following method:
+        Initialize (this is called in PlayerScript's private Awake())
+
+PlayerScript - attached to the player and starts by initializing a class object Stat with the name oxygen in our case
+    The oxygen stat's initialize function is called right away with private void Awake() {oxygen.Initialize();}
+    void Update () {} contains everything that affects the stat
+    for example: you can change the oxygen Stat's CurrentVal property with oxygen.CurrentVal += 10;
+    this calls oxygen.CurrentVal.set with 10 as the value which updates the stat's currentval (private) and the bar's Value
+    Value then changes fillAmount which causes an update to the image.
+
+    COOL OMG JEEZ
+
+
+// currently at 17:33 of video 4 Unity 5 health bar tutorial - Stats and I need to go to bed

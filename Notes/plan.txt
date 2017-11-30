@@ -1,0 +1,45 @@
+game is: you go left and right to dodge obstacles and collect bubbles as your health goes down
+
+always have whales swimming in background except for in tunnel
+
+
+
+you get to a certain point where mine productivity slows down and then it's like you're going through a tunnel,
+there are parts of the tunnel blocking you, falling boulders, and eels attacking you at the sides (tunnel has only boulders, eels, and mines)
+and you pop up where it's sandy like main menu screen, but different this time and there is light shining from above as if you are close to surface
+as you go up you start to see less and less background
+when the background art is kinda gone you start to see shadows of far away whales and schools of fishies in background
+
+obstacles in order of appearance
+  mines
+  falling rocks - small, big
+  sharks - swim horizontally (but makes sense w the background)
+  puffer fish  - puffs up if you get too close
+  eel - shocks and slows you
+
+treasures
+  clam w/pearl = 50 points
+  treasure box very rare = 100 points
+
+help items
+  air canister = 50 air
+  shield = blocks 3 mines
+  dolphino = + a certain amount of boost to speed for a period of time
+
+
+
+all skills are bought with points
+
+  active skills
+    dodge an obstacle by swimming behind
+
+
+  passive skills
+    speed = + movement speed (has a limit)
+    lungs = - air decrease speed
+    survivor = extra time to get air if air reaches zero
+    strength = mines hurt less
+    animal friend = creatures don't hurt you as much
+
+skins are bought with points
+  bikini_babe1 = blonde
